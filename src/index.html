@@ -6,8 +6,83 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- temporary stylesheets -->
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <app-root></app-root>
+
+  <!--   html template   -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Receipts</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo">
+      <img src="assets/img/BakingBread.png" alt="Baking Bread Logo">
+    </div>
+  </header>
+
+  <main>
+
+    <section class="recipe-section">
+      <h2 class="section-title">Recipe</h2>
+      <article class="recipe-article">
+        <h3 class="article-title">Delicious Bread Recipe</h3>
+        <div class="rating">Rating: 4.5/5</div>
+        <p class="prep-time">Preparation Time: 2 hours</p>
+        <ul class="ingredients-list">
+          <li>2 cups all-purpose flour</li>
+          <li>1 tsp salt</li>
+          <li>1 tsp sugar</li>
+          <li>2 tbsp yeast</li>
+          <!-- Additional ingredients can be added here -->
+        </ul>
+        <div class="instructions">
+          <h4 class="subheading">Instructions:</h4>
+          <ol class="steps-list">
+            <li>Mix all the dry ingredients together in a bowl.</li>
+            <li>Add warm water to the dry ingredients and mix well to form a dough.</li>
+            <li>Knead the dough for 10 minutes, then let it rise for an hour.</li>
+            <!-- Additional steps can be added here -->
+          </ol>
+        </div>
+        <p class="recipe-author">By: Jane Smith</p>
+        <p class="recipe-comments">Comments: 5</p>
+      </article>
+      <!-- Additional recipe articles can be added here -->
+    </section>
+
+    <aside class="news-sidebar">
+      <h2 class="section-title">News</h2>
+      <article class="news-article">
+        <h3 class="article-title">We have a new recipe!</h3>
+        <p class="article-details">Published on: October 10, 2021</p>
+        <p class="article-author">By: John Doe</p>
+        <p class="article-comments">Comments: 10</p>
+      </article>
+      <!-- Additional news articles can be added here -->
+    </aside>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Impressum</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <p class="copyright">&copy; 2023 Baking Bread. All rights reserved.</p>
+  </footer>
+
+
 </body>
 </html>
