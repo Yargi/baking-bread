@@ -1,1 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #efef1e;
+  color: #2a7837;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Navigation Styles */
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-menu li a {
+  color: #2a7837;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+}
+
+.container {
+  min-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.news-sidebar {
+  width: 28%;
+}
+
+.news-article {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.recipe-section {
+  width: 65%;
+}
+
+.recipe-article {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.rating {
+  font-weight:bold;
+}
+
+.prep-time {
+  font-style: italic;
+  margin-top:10px;
+  margin-bottom:-5px;
+}
+
+.ingredients-list, .steps-list {
+  margin-left:-20px;
+  padding-left:-20px;
+}
+
+.ingredients-list li, .steps-list li{
+  list-style-type:square;
+  margin-bottom:5px;
+}
+
+.recipe-author {
+  font-style: italic;
+  color: #888;
+  margin-top:10px;
+}
+
+.recipe-comments, .article-comments {
+  color: #888;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2a7837;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  .news-sidebar {
+    width: 100%;
+  }
+
+  .recipe-section {
+    width: 100%;
+  }
+}
