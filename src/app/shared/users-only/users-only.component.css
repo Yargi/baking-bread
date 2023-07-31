@@ -1,12 +1,18 @@
-pop-up {
+.pop-up {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #2a7837;
+  color: white;
   display: flex;
   flex-direction: column;
+  border: 2px solid #0b4904;
+  border-radius: 15px;
+  padding: 25px;
+  align-items: center;
 }
 
-button-strip {
-  flex-direction: column;
+.button-strip {
 }
+

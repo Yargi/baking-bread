@@ -17,6 +17,7 @@ header h1 {
 
 }
 
-.controls {
+.navi {
   display: flex;
+  align-items: flex-start;
 }
