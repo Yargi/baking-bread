@@ -1,0 +1,22 @@
+/* Header Styles */
+header {
+  background-color: rgba(245, 255, 0, 0.53);
+  color: #0b4904;
+  padding: 20px;
+}
+
+.face {
+  display: flex;
+  justify-content: space-around;
+}
+
+header h1 {
+}
+
+.logo img {
+
+}
+
+.controls {
+  display: flex;
+}
