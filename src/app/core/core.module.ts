@@ -6,6 +6,7 @@ import {NewsListComponent} from "./news-list/news-list.component";
 import {RecipesListComponent} from "./recipes-list/recipes-list.component";
 import {SharedModule} from "../shared/shared.module";
 import { NavigationComponent } from './navigation/navigation.component';
+import { CommentsListComponent } from './comments-list/comments-list.component';
 
 
 
@@ -15,7 +16,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     FooterComponent,
     NewsListComponent,
     RecipesListComponent,
-    NavigationComponent
+    NavigationComponent,
+    CommentsListComponent
   ],
     imports: [
         CommonModule,
