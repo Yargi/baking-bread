@@ -14,9 +14,10 @@ header h1 {
 }
 
 .logo img {
-
+  height: 80px;
 }
 
-.controls {
+.navi {
   display: flex;
+  align-items: flex-start;
 }
