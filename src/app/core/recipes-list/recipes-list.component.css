@@ -1,0 +1,40 @@
+.recipe-section {
+  width: 65%;
+}
+
+.recipe-article {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.rating {
+  font-weight:bold;
+}
+
+.prep-time {
+  font-style: italic;
+  margin-top:10px;
+  margin-bottom:-5px;
+}
+
+.ingredients-list, .steps-list {
+  margin-left:-20px;
+  padding-left:-20px;
+}
+
+.ingredients-list li, .steps-list li{
+  list-style-type:square;
+  margin-bottom:5px;
+}
+
+.recipe-author {
+  font-style: italic;
+  color: #888;
+  margin-top:10px;
+}
+
+.recipe-comments, .article-comments {
+  color: #888;
+}

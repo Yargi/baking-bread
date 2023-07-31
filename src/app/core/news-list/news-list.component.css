@@ -1,0 +1,14 @@
+.section-title {
+  margin-bottom: 20px;
+}
+
+.news-section {
+  width: 28%;
+}
+
+.news-article {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
