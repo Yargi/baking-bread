@@ -1,58 +1,3 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/* Main Content Styles */
-main {
-  display: flex;
-}
-
-.container {
-  min-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-.button {
-  margin-right: 20px;
-  padding: 8px 12px;
-  background-color: #0b4904;
-  color: white;
-  border: 2px solid #0b4904;
-  border-radius: 15px;
-}
-
-.button:hover {
-  border-color: red;
-  cursor: grab;
-}
-
-
-
-
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-  main {
-    display: block;
-  }
-
-  .container {
-    max-width: 600px;
-  }
-
-  .news-sidebar {
-    width: 100%;
-  }
-
-  .recipe-section {
-    width: 100%;
-  }
-}
 
 
 
@@ -404,4 +349,66 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/*
+==========================================================================
+===========================NORMALIZER-END=================================
+==========================================================================
+*/
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Main Content Styles */
+main {
+  display: flex;
+}
+
+.container {
+  min-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.button {
+  margin-right: 20px;
+  padding: 8px 12px;
+  background-color: #0b4904;
+  color: white;
+  border: 2px solid #0b4904;
+  border-radius: 15px;
+}
+
+.button:hover {
+  border-color: red;
+  cursor: grab;
+}
+
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  .news-sidebar {
+    width: 100%;
+  }
+
+  .recipe-section {
+    width: 100%;
+  }
 }
