@@ -7,13 +7,15 @@ import {SharedModule} from "./shared/shared.module";
 import {NewsListComponent} from "./news-list/news-list.component";
 import {RecipesListComponent} from "./recipes-list/recipes-list.component";
 import {CommentsListComponent} from "./comments-list/comments-list.component";
+import { AuthenticateComponent } from './authenticate/authenticate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsListComponent,
     RecipesListComponent,
-    CommentsListComponent
+    CommentsListComponent,
+    AuthenticateComponent
   ],
   imports: [
     BrowserModule,

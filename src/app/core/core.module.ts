@@ -4,7 +4,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {HeaderComponent} from "./header/header.component";
 import {SharedModule} from "../shared/shared.module";
 import { NavigationComponent } from './navigation/navigation.component';
-import { CommentsListComponent } from '../comments-list/comments-list.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -13,6 +13,7 @@ import { CommentsListComponent } from '../comments-list/comments-list.component'
     HeaderComponent,
     FooterComponent,
     NavigationComponent,
+    ErrorComponent,
   ],
     imports: [
         CommonModule,
