@@ -6,11 +6,11 @@ describe('AuthenticateComponent', () => {
   let component: AuthenticateComponent;
   let fixture: ComponentFixture<AuthenticateComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach( () => {
+     TestBed.configureTestingModule({
       declarations: [ AuthenticateComponent ]
-    })
-    .compileComponents();
+    });
+    // .compileComponents();
 
     fixture = TestBed.createComponent(AuthenticateComponent);
     component = fixture.componentInstance;

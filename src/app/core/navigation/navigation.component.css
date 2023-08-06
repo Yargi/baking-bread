@@ -18,3 +18,8 @@
   color: #ffff00;
   text-decoration: none;
 }
+
+.nav-menu li:hover {
+  border-color: red;
+  cursor: pointer;
+}
