@@ -11,7 +11,6 @@ import {RecipesListComponent} from "./recipes-list/recipes-list.component";
 import {CommentsListComponent} from "./comments-list/comments-list.component";
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { HomeComponent } from './home/home.component';
-import {NotFoundComponent} from "./core/not-found/not-found.component";
 import {appInterceptorProvider} from "./app.interceptor";
 
 @NgModule({
@@ -33,4 +32,5 @@ import {appInterceptorProvider} from "./app.interceptor";
   providers: [appInterceptorProvider],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
