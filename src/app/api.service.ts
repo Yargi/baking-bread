@@ -35,11 +35,11 @@ export class ApiService {
   }
 
   // NEWS
-  getPosts(limit?: number) {
+  getNews(limit?: number) {
     const { apiUrl } = environment;
     const limitFilter = limit ? `?limit=${limit}` : '';
 
     return this.http
-      .get<News[]>(`${apiUrl}/news${limitFilter}`)
+      .get<News[]>(`${apiUrl}/news.json${limitFilter}`)
       .pipe(tap((news) => (this.news = news)));
   }}

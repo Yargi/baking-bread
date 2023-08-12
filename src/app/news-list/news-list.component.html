@@ -1,10 +1,16 @@
 <section class="news-section">
   <h2 class="section-title">News</h2>
-  <article class="news-article">
-    <h3 class="article-title">We have a new recipe!</h3>
-    <p class="article-details">Published on: October 10, 2021</p>
-    <p class="article-author">By: John Doe</p>
-    <p class="article-comments">Comments: 10</p>
+
+  <div *ngIf="isLoading">
+    <app-loading></app-loading>
+  </div>
+
+  <div *ngIf="!isLoading">
+  <article *ngFor="let news of newsList" class="news-article">
+    <h3 class="article-title">{{ news.title }}</h3>
+    <p class="article-details">{{ news.article }}</p>
+    <p class="article-author">{{ news.author }}</p>
+    <p class="article-timestamp">{{ news.timestamp }}</p>
   </article>
-  <!-- Additional news articles can be added here -->
+  </div>
 </section>

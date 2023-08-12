@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Recipe} from "../types/recipe";
+import {ApiService} from "../api.service";
+import {UserService} from "../user/user.service";
+import {News} from "../types/news";
 
 @Component({
   selector: 'app-news-list',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsListComponent implements OnInit {
 
-  constructor() { }
+  newsList: News[] = [];
+  isLoading: boolean = true;
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getNews().subscribe({
+      next: (news) => {
+        this.newsList = news;
+        this.isLoading = false;
+      },
+      error: (err) => {
+        this.isLoading = false;
+        console.error(`Error: ${err}`);
+      }
+    });
   }
-
 }
