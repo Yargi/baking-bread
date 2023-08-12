@@ -42,3 +42,9 @@
 .recipe-comments, .article-comments {
   color: #888;
 }
+
+.section-title {
+  margin-bottom: 20px;
+  align-self: center;
+}
+
