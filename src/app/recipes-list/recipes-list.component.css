@@ -1,7 +1,10 @@
 .recipe-section {
-  width: 800px;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 64%;
 }
+
+
 
 .recipe-article {
   background-color: #f2f2f2;
