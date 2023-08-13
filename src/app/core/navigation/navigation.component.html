@@ -2,11 +2,13 @@
 <nav class="navbar">
   <ul class="nav-menu">
     <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/news">News</a></li>
     <li><a routerLink="/recipes">Recipes</a></li>
-    <li><a routerLink="/auth/register">Register</a></li>
-    <li><a routerLink="/auth/login">Login</a></li>
-    <li><a routerLink="/auth/profile">Profile</a></li>
-    <li><a routerLink="/auth/logout">Logout</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="/recipes">Add Recipe</a></li>
+    <li><a routerLink="/news">News</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="/news">Add News</a></li>
+    <li *ngIf="!isLoggedIn"><a routerLink="/auth/register">Register</a></li>
+    <li *ngIf="!isLoggedIn"><a routerLink="/auth/login">Login</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="/auth/profile">Profile</a></li>
+    <li *ngIf="isLoggedIn"><a routerLink="/auth/logout">Logout</a></li>
   </ul>
 </nav>
