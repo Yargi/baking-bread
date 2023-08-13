@@ -6,6 +6,7 @@ import {SharedModule} from "../shared/shared.module";
 import { NavigationComponent } from './navigation/navigation.component';
 import { ErrorComponent } from './error/error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -19,11 +20,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
     imports: [
         CommonModule,
+        RouterModule,
         SharedModule
     ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ]
 })
 export class CoreModule { }
