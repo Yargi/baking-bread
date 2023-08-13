@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewRecipeComponent } from './new-recipe/new-recipe.component';
-import { DetailedRecipeComponent } from './detailed-recipe/detailed-recipe.component';
+import {AddRecipeComponent} from './add-recipe/add-recipe.component';
+import {RecipeRoutingModule} from "./recipe-routing.module";
 
 
 
 @NgModule({
   declarations: [
-    NewRecipeComponent,
-    DetailedRecipeComponent
+    AddRecipeComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RecipeRoutingModule
   ]
 })
 export class RecipeModule { }

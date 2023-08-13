@@ -12,6 +12,7 @@ import {CommentsListComponent} from "./comments-list/comments-list.component";
 import { AuthenticateComponent } from './authenticate/authenticate.component';
 import { HomeComponent } from './home/home.component';
 import {appInterceptorProvider} from "./app.interceptor";
+import {RecipeModule} from "./recipe/recipe.module";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {appInterceptorProvider} from "./app.interceptor";
     HttpClientModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    RecipeModule
   ],
   providers: [appInterceptorProvider],
   bootstrap: [AppComponent]

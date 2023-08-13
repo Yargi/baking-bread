@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Recipe} from "../types/recipe";
 import {ApiService} from "../api.service";
-import {UserService} from "../user/user.service";
 import {News} from "../types/news";
 
 @Component({
