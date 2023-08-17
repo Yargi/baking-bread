@@ -1,5 +1,16 @@
 main {
-  width: auto;
-  display: flex;
-  flex-direction: row;
+display: inline-block;
+  background-color: #0b4904;
+}
+
+app-recipes-list {
+  float: left;
+  width: 65%;
+  margin: 1%;
+}
+
+app-news-list {
+  float: right;
+  width: 31%;
+  margin: 1%;
 }

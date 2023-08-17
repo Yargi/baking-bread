@@ -1,18 +1,16 @@
 
 .news-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 32%;
+
 }
 
 .section-title {
+  color: yellow;
   margin-bottom: 20px;
-  align-self: center;
+  text-align: center;
 }
 
 .news-section {
-  width: 350px;
-  padding: 10px 20px;
+
 }
 
 .news-article {

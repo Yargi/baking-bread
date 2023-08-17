@@ -1,7 +1,5 @@
 .recipe-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 64%;
+
 }
 
 
@@ -44,7 +42,8 @@
 }
 
 .section-title {
+  color: yellow;
   margin-bottom: 20px;
-  align-self: center;
+  text-align: center;
 }
 
