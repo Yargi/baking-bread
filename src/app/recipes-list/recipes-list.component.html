@@ -20,8 +20,10 @@
           <li *ngFor="let step of recipe.instructions">{{ step }}</li>
         </ol>
       </div>
-      <p class="recipe-author">{{ recipe.author }}</p>
-        <p class="recipe-comments">Comments: 5</p>
+      <div>
+        <div class="recipe-author">Author: {{ recipe.author }}</div>
+        <div class="recipe-comments">Comments: 5</div>
+      </div>
 <!--        <app-comments-list></app-comments-list>-->
     </article>
   </div>

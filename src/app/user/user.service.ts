@@ -24,9 +24,9 @@ export class UserService implements OnDestroy {
     this.subscription = this.user$.subscribe((user) => { this.user = user });
   }
 
-  login(email: String, password: String) {
+  login(username: String, password: String) {
     return this.http
-      .post<User>('/api/login', {email, password})
+      .post<User>('/api/login', {username, password})
       .pipe(tap((user) => this.user$$.next(user)))
   }
 

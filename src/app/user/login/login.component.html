@@ -1,1 +1,71 @@
-<p>login works!</p>
+<div class="container">
+  <form class="login" [formGroup]="form" (ngSubmit)="login()">
+    <fieldset>
+      <h2>Login Form</h2>
+
+      <!-- username -->
+      <p class="field field-icon">
+        <label for="username"
+        ><span><i class="fas fa-user"></i></span
+        ></label>
+        <input
+          class="input-error"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Johny"
+          formControlName="username"
+        />
+      </p>
+
+      <ng-container *ngIf="form.get('username')?.touched">
+        <p class="error" *ngIf="form.get('username')?.errors?.['required']">
+          Username is required!
+        </p>
+        <p class="error" *ngIf="form.get('username')?.errors?.['minlength']">
+          Username's length should not be less than 5!
+        </p>
+      </ng-container>
+
+      <!-- password -->
+      <p class="field field-icon">
+        <label for="password"
+        ><span><i class="fas fa-lock"></i></span
+        ></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="******"
+          formControlName="password"
+        />
+      </p>
+
+      <ng-container *ngIf="form.get('password')?.touched">
+        <p
+          class="error"
+          *ngIf="form.get('password')?.errors?.['required']"
+        >
+          Password is required!
+        </p>
+        <p
+          class="error"
+          *ngIf="form.get('password')?.errors?.['minlength']"
+        >
+          Password must be at least
+          {{
+          form.get('password')?.errors?.['minlength']?.['requiredLength']
+          }}
+          characters!
+        </p>
+      </ng-container>
+
+      <button [disabled]="form.invalid">Login to Account</button>
+
+      <p class="text-center">
+        Forgotten Password?
+        <a routerLink="/auth/login">Reset Password</a>
+      </p>
+    </fieldset>
+  </form>
+</div>
